@@ -1,0 +1,102 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+$head_arrow_width: 32px;
+$head_arrow_height: 32px;
+
+.#{$public_wrap_div} {
+	width: $container_pc;
+	margin: 0 auto;
+}
+.#{$public_wrap_div} li {
+	margin: 0;
+	padding: 45px 0;
+	border: none;
+	border-top: solid 1px #e5e5e5;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+.#{$public_wrap_div} li:first-child {
+	border-top-color: transparent;
+}
+.#{$public_wrap_div} .pi23-head {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.#{$public_wrap_div} .pi23-head::after {
+	content: "";
+	width: $head_arrow_width;
+	height: $head_arrow_height;
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	margin-top: -#{$head_arrow_height / 2};
+	background: url(../images/mdw1.png);
+	background-position: right 0px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi23-head.collapsed::after {
+	transform:rotate(-180deg);
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+}
+.#{$public_wrap_div} .pi23h-tit, .#{$public_wrap_div} .pi23h-info {
+	display: block;
+}
+.#{$public_wrap_div} .pi23h-tit {
+	color: #000;
+	font-size: 24px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+.#{$public_wrap_div} .pi23h-info {
+	font-size: 0px;
+	line-height: normal;
+}
+.#{$public_wrap_div} .pi23h-info span {
+	display: inline-block;
+	vertical-align: top;
+	color: #939393;
+	font-size: 16px;
+	line-height: 16px;
+}
+.#{$public_wrap_div} .pi23h-num {
+	color: #c50000;
+	padding-right: 15px;
+	border-right: solid 1px #939393;
+}
+.#{$public_wrap_div} .pi23c-info {
+	color: #939393;
+	font-size: 16px;
+	line-height: 24px;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.#{$public_wrap_div} {
+		width: $container_note_pc;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.#{$public_wrap_div} {
+		width: $container_pad;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.#{$public_wrap_div} {
+		width: $container_note_phone;
+	}
+}
+
+

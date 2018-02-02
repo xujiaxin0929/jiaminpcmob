@@ -1,0 +1,14 @@
+{
+	"template_plugin_common_css":[
+		
+	],
+	"template_plugin_self_css":[
+		{"src": "css/style.css"}
+	],
+	"template_plugin_common_js":[
+		
+	],
+	"template_plugin_self_js":[
+		
+	]
+}

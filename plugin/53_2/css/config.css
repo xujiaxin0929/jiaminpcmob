@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: item_li_mar_right
+    title: 每一个li的右边距
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: item_pc_num
+    title: 电脑端一排显示数量
+    zhiyu: 1-5
+    beizhu:
+*/
+/**
+    name: item_phone_num
+    title: 手机端一排显示数量
+    zhiyu: 1-5
+    beizhu: 
+*/
+/**
+    name: item_li_phone_mar_right
+    title: 每一个li的右边距
+    zhiyu: *
+    beizhu:
+*/
+
+/*# sourceMappingURL=config.css.map */

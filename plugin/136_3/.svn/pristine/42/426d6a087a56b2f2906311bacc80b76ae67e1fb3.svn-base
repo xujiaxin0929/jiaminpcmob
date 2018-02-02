@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+.public-nav-136_3 {
+  width: 100%; }
+
+.public-nav-136_3 .banner {
+  width: 100%;
+  height: 480px;
+  position: relative; }
+
+.public-nav-136_3 .bn_box {
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); }
+
+.public-nav-136_3 .bn_nav {
+  text-align: center; }
+
+.public-nav-136_3 .bn_nav li {
+  display: inline-block;
+  line-height: 64px;
+  width: auto;
+  border-left: 1px solid #9fa7a6; }
+
+.public-nav-136_3 .bn_nav li a {
+  display: block;
+  width: 168px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -ms-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out; }
+
+.public-nav-136_3 .bn_nav li:last-child {
+  border-right: 1px solid #9fa7a6; }
+
+.public-nav-136_3 .bn_nav .active a {
+  color: #fff;
+  background: #0e6eb8; }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .public-nav-136_3 .bn_nav li a {
+    width: 140px; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .public-nav-136_3 .bn_nav li {
+    width: 14.28571%; }
+
+  .public-nav-136_3 .bn_nav li a {
+    width: 100%;
+    font-size: 14px; } }
+@media screen and (min-width: 769px) {
+  .public-nav-136_3 .bn_nav li a:hover {
+    background: #0e6eb8; } }
+@media screen and (max-width: 768px) {
+  .public-nav-136_3 .scroll_menu {
+    width: 100%;
+    float: left;
+    overflow: auto; }
+
+  .public-nav-136_3 .scroll_menu ul {
+    float: left;
+    min-width: 100%;
+    white-space: nowrap;
+    position: relative; }
+
+  .public-nav-136_3 .banner {
+    height: 3.6rem;
+    position: relative; }
+
+  .public-nav-136_3 .bn_box {
+    height: 0.8rem;
+    background: #ECECEC;
+    overflow: hidden; }
+
+  .public-nav-136_3 .bn_nav {
+    overflow: auto;
+    white-space: nowrap; }
+
+  .public-nav-136_3 .bn_nav li {
+    width: auto;
+    overflow: auto;
+    height: 0.8rem;
+    border: none !important;
+    margin: 0 0.22rem; }
+
+  .public-nav-136_3 .bn_nav li a {
+    box-sizing: border-box;
+    width: auto;
+    font-size: 0.26rem;
+    color: #000;
+    line-height: 0.78rem; }
+
+  .public-nav-136_3 .bn_nav .active a {
+    color: #000;
+    background: none;
+    border-bottom: 0.02rem solid #0e6eb8; } }
+
+/*# sourceMappingURL=style.css.map */

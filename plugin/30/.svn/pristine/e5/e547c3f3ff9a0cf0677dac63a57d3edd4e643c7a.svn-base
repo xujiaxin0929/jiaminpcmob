@@ -1,0 +1,71 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+.#{$public_wrap_div} {
+	width: $container_pc;
+	max-width: 100%;
+	margin: 20px auto;
+	position: relative;
+}
+.#{$public_wrap_div} .swiper-container {
+	padding: 10px;
+} 
+.#{$public_wrap_div} .cu_l li:hover{
+	box-shadow: 5px 5px 5px #dcdcdc;
+}
+.#{$public_wrap_div} .cu_l li{
+	box-sizing: border-box;
+	height: auto;
+	border: 1px solid #dbdbdb;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition:box-shadow 0.3s ease-in-out;
+	-moz-transition:box-shadow 0.3s ease-in-out;
+	-ms-transition:box-shadow 0.3s ease-in-out;
+	-o-transition:box-shadow 0.3s ease-in-out;
+	transition:box-shadow 0.3s ease-in-out;
+}
+.#{$public_wrap_div} .cu_l li a{
+	display: block;
+}
+.#{$public_wrap_div} .cu_l li img{
+	width: 100%;
+}
+.#{$public_wrap_div} .cu_box .swiper-pagination-bullet{
+	width: 16px;
+	height: 16px;
+	margin: 0 8px;
+}
+.#{$public_wrap_div} .swiper-pagination{
+	position: absolute;
+	left: 50%;
+	bottom: -60px;
+	margin-left: -32px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.#{$public_wrap_div} {
+		width: $container_note_pc;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.#{$public_wrap_div} {
+		width: $container_pad;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.#{$public_wrap_div} {
+		width: $container_note_phone;
+	}
+	.#{$public_wrap_div} .swiper-pagination {
+		bottom: -0.6rem;
+		margin-left: -1rem;
+	}
+	.#{$public_wrap_div} .cu_box .swiper-pagination-bullet {
+		width: 0.24rem;
+	    height: 0.24rem;
+	    margin: 0 0.08rem;
+	}
+	.#{$public_wrap_div} .cu_l li:hover{
+		box-shadow: none;
+	}
+}

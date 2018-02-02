@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+/*代码示例
+<div class="config_title_box">
+	<h1>SOLUTION</h1>
+	<span></span>
+	<p>解决方案</p>
+</div>
+代码示例*/
+
+
+
+.config_title_box{width:100%;}
+.config_title_box>h1{width:100%;line-height:38px;font-size:38px;text-align:center;color:#333;margin:0;padding:0;font-weight:normal;}
+.config_title_box>span{display:block;width:42px;height:2px;background:#52cffc;margin:22px auto;}
+.config_title_box>p{width:100%;line-height:30px;font-size:30px;text-align:center;color:#333;}
+@media screen and (max-width: 767px) {
+  .public_list_162{padding:0.5rem 0;} 
+  .config_title_box>h1{font-size:0.38rem;line-height:0.38rem;}
+  .config_title_box>span{width:0.42rem;margin:0.22rem auto;} 
+  .config_title_box>p{font-size:0.3rem;line-height:0.3rem;} 
+}
+/*# sourceMappingURL=title.css.map */

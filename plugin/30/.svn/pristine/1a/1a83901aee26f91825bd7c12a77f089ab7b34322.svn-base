@@ -1,0 +1,16 @@
+{
+	"template_plugin_common_css":[
+		
+	],
+	"template_plugin_self_css":[
+		{"src": "css/swiper-3.3.1.min.css"}
+		,{"src": "css/style.css"}
+	],
+	"template_plugin_common_js":[
+		
+	],
+	"template_plugin_self_js":[
+		{"src": "js/swiper-3.3.1.min.js"}
+		,{"src": "js/script.js"}
+	]
+}

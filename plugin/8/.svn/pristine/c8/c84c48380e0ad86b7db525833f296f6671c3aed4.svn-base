@@ -1,0 +1,271 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+$public_slide_8_pager_width: 50px;
+$public_slide_8_pager_height: 4px;
+$public_slide_8_pager_margin: 0;
+$public_slide_8_pager_border_radius: 0;
+$public_slide_8_pager_bottom: 40px;
+$public_slide_8_pager_default_background: #525252;
+$public_slide_8_pager_hover_background: #ff4754;
+$public_slide_8_controls_zindex: 1;
+$public_slide_8_controls_prev_background: url(../images/arrow.png) no-repeat 0 0;
+$public_slide_8_controls_prev_background_hover: 0 -32px;
+$public_slide_8_controls_next_background: url(../images/arrow.png) no-repeat -32px 0;
+$public_slide_8_controls_next_background_hover: -32px -32px;
+$public_slide_8_text_padding: 0 80px;
+$public_slide_8_text_width: 840px;
+$public_slide_8_text_line_height: 32px;
+$public_slide_8_text_margin: 0 auto;
+$public_slide_8_text_1_margin: 50px auto;
+$public_slide_8_text_1_font_size: 18px;
+$public_slide_8_text_1_color: #FFF;
+$public_slide_8_text_2_font_size: 18px;
+$public_slide_8_text_2_color: #FFF;
+$downSider_width: 45px;
+$downSider_height: 22px;
+$downSider_background: url(../images/arrow_down.png) no-repeat center center;
+$downSider_marginLeft: -($downSider_width/2);
+$downSider_bottom: 75px;
+
+@mixin display_control($display_control_bool, $display_control_name) {
+    @if $display_control_bool {
+        .#{$public_wrap_div} .#{$display_control_name} {
+            display: block;
+        }
+    } @else {
+        .#{$public_wrap_div} .#{$display_control_name} {
+            display: none;
+        }
+    }
+}
+
+.bx-wrapper {
+	margin: 0 auto;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.bx-wrapper .bx-controls-direction a {
+    z-index: 1;
+}
+.bx-wrapper .bx-pager {
+	padding-top: 0;
+	font-size: 0px;
+}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+	bottom: 0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	border-radius: 50%;
+}
+
+.#{$public_wrap_div} {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.#{$public_wrap_div} li {
+    width:100%;
+    overflow: hidden;
+}
+.#{$public_wrap_div} public-slide-8-img {
+    width: 100%;
+    @include public_transition(1.8s);
+}
+.#{$public_wrap_div} public-slide-8-img.ps8i_in {
+    @include public_transform_scale(1.2);
+    @include public_delay(0.8s);
+}
+@include display_control($is_show_controls, bx-controls-direction);
+@include display_control($is_show_pages, bx-pager);
+@include display_control($is_show_text, public-slide-8-text-box);
+@include display_control($is_show_downSider, ps8-downSider);
+.#{$public_wrap_div} .bx-wrapper .bx-controls-auto, .#{$public_wrap_div} .bx-wrapper .bx-pager {
+    bottom: $public_slide_8_pager_bottom;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-pager.bx-default-pager a {
+    width: $public_slide_8_pager_width;
+    height: $public_slide_8_pager_height;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-pager.bx-default-pager a {
+    margin: $public_slide_8_pager_margin;
+    border-radius: $public_slide_8_pager_border_radius;
+    background: $public_slide_8_pager_default_background;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-pager.bx-default-pager a.active, .#{$public_wrap_div} .bx-wrapper .bx-pager.bx-default-pager a:focus, .#{$public_wrap_div} .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: $public_slide_8_pager_hover_background;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-prev {
+    background: $public_slide_8_controls_prev_background;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-prev:focus, .#{$public_wrap_div} .bx-wrapper .bx-prev:hover {
+    background-position: $public_slide_8_controls_prev_background_hover;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-next {
+    background: $public_slide_8_controls_next_background;
+}
+.#{$public_wrap_div} .bx-wrapper .bx-next:focus, .#{$public_wrap_div} .bx-wrapper .bx-next:hover {
+    background-position: $public_slide_8_controls_next_background_hover;
+}
+.#{$public_wrap_div}-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 0px;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.#{$public_wrap_div}-text-box::before {
+    content: "";
+    display: inline-block;
+    height: 50%;
+}
+.#{$public_wrap_div}-text {
+    width: 100%;
+    padding: $public_slide_8_text_padding;
+    display: inline-block;
+    vertical-align: middle;
+}
+.#{$public_wrap_div}-text .ps8t-img, .#{$public_wrap_div}-text .ps8t {
+    @include public_transition(0.6s);
+}
+.#{$public_wrap_div}-text .ps8t-img {
+    margin: 0 auto;
+}
+.#{$public_wrap_div}-text .ps8t {
+    margin: $public_slide_8_text_margin;
+    width: 100%;
+    line-height: $public_slide_8_text_line_height;
+}
+.#{$public_wrap_div}-text .ps8t-1 {
+    margin: 0 auto 28px auto;
+    font-size: 28px;
+    color: #fff;
+    line-height:40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.#{$public_wrap_div}-text .ps8t-2 {
+    width: 494px;
+    font-size: 26px;
+    color: #FFF;
+    border-top: 1px solid #fff;
+    padding-top: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.#{$public_wrap_div}-text .ps8t_hs1 {
+   line-height:70px;
+   font-size:70px;
+   color:#fff;
+   padding:0 0 24px 0;
+   @include public_delay(0.1s);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight:normal;
+}
+.#{$public_wrap_div}-text.ps8t-hide .ps8t, .#{$public_wrap_div}-text.ps8t-hide .ps8t-img {
+    @include public_transform_translateY(100px);
+    opacity: 0;
+    text-shadow: 3px 3px 1px rgba(0,0,0,.6);
+}
+.#{$public_wrap_div}-text.ps8t-show .ps8t, .#{$public_wrap_div}-text.ps8t-show .ps8t-img {
+    @include public_transform_translateY();
+    opacity: 1;
+}
+.#{$public_wrap_div}-text.ps8t-show .ps8t-2 {
+    @include public_delay(0.2s);
+}
+.#{$public_wrap_div} .ps8-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+// .#{$public_wrap_div} .ps8-mask.mask-in {
+//     opacity: 1;
+// }
+.#{$public_wrap_div} .ps8-downSider {
+    width: $downSider_width;
+    height: $downSider_height;
+    background: $downSider_background;
+    position: absolute;
+    left: 50%;
+    margin-left: $downSider_marginLeft;
+    bottom: $downSider_bottom;
+    @include animation(downSider, 1.5s ease-in-out 0.1s alternate infinite);
+    cursor: pointer;
+}
+
+@include keyframes(downSider) {
+    0% {
+        @include public_transform_translateY(0);
+    } 100% {
+        @include public_transform_translateY(-10px);
+    }
+}
+
+@include respond-to(tiny) {
+
+    .#{$public_wrap_div} .public-slide-8-text{
+        width:100%;
+        padding:0;
+        margin:0 auto;
+    }
+    $is_show_controls: false;
+    $is_show_downSider: false;
+    $public_slide_8_pager_bottom: 10px;
+    $public_slide_8_text_width: 100%;
+    $public_slide_8_text_1_margin: 10px auto;
+    $public_slide_8_text_1_font_size: 1.4rem;
+
+    @include display_control($is_show_controls, bx-controls-direction);
+    @include display_control($is_show_downSider, ps8-downSider);
+    .#{$public_wrap_div} .bx-wrapper .bx-controls-auto, .#{$public_wrap_div} .bx-wrapper .bx-pager {
+        bottom: $public_slide_8_pager_bottom;
+    }
+    .#{$public_wrap_div}-text .ps8t-img {
+        max-height: 30px;
+    }
+    .#{$public_wrap_div}-text .ps8t {
+        width: $public_slide_8_text_width;
+        line-height: $public_slide_8_text_line_height;
+    }
+    .#{$public_wrap_div}-text .ps8t-1 {
+        margin: 0rem auto;
+        font-size: 0.4rem;
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        padding-bottom:0.5rem;
+    }
+    .#{$public_wrap_div}-text .ps8t-2 {
+        font-size: 0.3rem;
+        width: 70%;
+        padding-top:0.3rem;
+    }
+    .#{$public_wrap_div} .ps8t_hs1{
+        font-size:0.7rem;
+    }
+    .public-slide-8-text .ps8t{
+        line-height:0.72rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .public-slide-8-text .ps8t_hs1{
+        font-size:60px;
+    }
+}
+
+

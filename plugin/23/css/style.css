@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+.public-index-23 {
+  width: 90%;
+  margin: 0 auto; }
+
+.public-index-23 li {
+  margin: 0;
+  padding: 45px 0;
+  border: none;
+  border-top: solid 1px #e5e5e5;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.public-index-23 li:first-child {
+  border-top-color: transparent; }
+
+.public-index-23 .pi23-head {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+.public-index-23 .pi23-head::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -16px;
+  background: url(../images/mdw1.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -webkit-transtion: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.public-index-23 .pi23-head.collapsed::after {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg); }
+
+.public-index-23 .pi23h-tit, .public-index-23 .pi23h-info {
+  display: block; }
+
+.public-index-23 .pi23h-tit {
+  color: #000;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 20px; }
+
+.public-index-23 .pi23h-info {
+  font-size: 0px;
+  line-height: normal; }
+
+.public-index-23 .pi23h-info span {
+  display: inline-block;
+  vertical-align: top;
+  color: #939393;
+  font-size: 16px;
+  line-height: 16px; }
+
+.public-index-23 .pi23h-num {
+  color: #c50000;
+  padding-right: 15px;
+  border-right: solid 1px #939393; }
+
+.public-index-23 .pi23c-info {
+  color: #939393;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  padding-top: 20px; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .public-index-23 {
+    width: 96%; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .public-index-23 {
+    width: 96%; } }
+@media screen and (max-width: 767px) {
+  .public-index-23 {
+    width: 93.6%; } }
+
+/*# sourceMappingURL=style.css.map */

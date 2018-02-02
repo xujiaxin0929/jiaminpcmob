@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class名
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: wrap_inner_width
+    title: 内容宽度
+    zhiyu:
+    beizhu:
+*/
+
+/*# sourceMappingURL=config.css.map */

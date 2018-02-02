@@ -1,0 +1,17 @@
+<div class="public-nav-136_3">
+	<div class="banner" style="background:url(<?php echo PLUGIN_ID_PATH?>images/20170323149024205121.jpg) center;background-size:cover;">
+		<!--pc 二级菜单-->	
+		<div class="bn_box hide_m">
+			<ul class="bn_nav w1200">
+				<li class="active"><a href="#">招聘</a></li><li><a href="#">联系方式</a></li><li><a href="#">报名表下载</a></li><li><a href="#">组织机构</a></li><li><a href="#">评审申报</a></li><li><a href="#">评审申报</a></li><li><a href="#">评审申报</a></li>
+			</ul>	
+		</div>
+
+		<!-- 移动端Nav -->
+		<div class="navs_scroll hide_p"> 
+		    <div class="swiper-container subNavsList swiper-container-horizontal" id="swiper-container"> 
+			    <ul class="swiper-wrapper"><li class="swiper-slide"> <a href="/phone/digital-list-0.htm" target="">招聘</a> </li><li class="swiper-slide"> <a href="/phone/virtual-list-0.htm" target="">联系方式</a> </li><li class="swiper-slide"> <a href="/phone/film-list-0.htm" target="">报名表下载</a> </li><li class="swiper-slide active"> <a href="/phone/web-list-0.htm" target="">组织机构</a> </li><li class="swiper-slide"> <a href="/phone/shop-list-0.htm" target="">评审申报</a> </li><li class="swiper-slide"> <a href="/phone/mobile-list-0.htm" target="">评审申报</a> </li><li class="swiper-slide"> <a href="/phone/mobile-list-0.htm" target="">评审申报</a></li></ul> 
+		    </div> 
+		</div>
+	</div>
+</div>

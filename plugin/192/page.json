@@ -1,0 +1,16 @@
+{
+	"template_plugin_common_css":[
+		
+	],
+	"template_plugin_self_css":[
+		{"src": "css/jquery.mmenu.all.css"}
+		,{"src": "css/style.css"}
+	],
+	"template_plugin_common_js":[
+
+	],
+	"template_plugin_self_js":[
+		{"src": "js/jquery.bxslider.js"},
+		{"src": "js/index.js"}
+	]
+}

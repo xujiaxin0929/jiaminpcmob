@@ -1,0 +1,83 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+.#{$public_wrap_div} {
+	position: relative;
+}
+.#{$public_wrap_div} .cu_l li:hover{
+	box-shadow: 5px 5px 5px #dcdcdc;
+}
+.#{$public_wrap_div} .cu_l li{
+	float: left;
+	box-sizing: border-box;
+	height: auto;
+	border: 1px solid #dbdbdb;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: #{$public_item_mar - 0.01}px;  
+  width: -webket-calc((100% - ( #{$public_item_mar}px * #{$public_item_num - 1})) / #{$public_item_num});
+  width: -moz-calc((100% - ( #{$public_item_mar}px * #{$public_item_num - 1})) / #{$public_item_num});
+  width: calc((100% - ( #{$public_item_mar}px * #{$public_item_num - 1})) / #{$public_item_num});
+	-webkit-transition:box-shadow 0.3s ease-in-out;
+	-moz-transition:box-shadow 0.3s ease-in-out;
+	-ms-transition:box-shadow 0.3s ease-in-out;
+	-o-transition:box-shadow 0.3s ease-in-out;
+	transition:box-shadow 0.3s ease-in-out;
+}
+.#{$public_wrap_div} .cu_l li a{
+	display: block;
+}
+.#{$public_wrap_div} .cu_l li img{
+	width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+	.#{$public_wrap_div} .cu_l li:nth-child(n + #{$public_item_num + 1}){
+	   margin-top:  #{$public_item_mar}px;          
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(#{$public_item_num}n){
+	   margin-right: 0px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.#{$public_wrap_div} .cu_l li{
+	  width: -webket-calc((100% - ( #{$public_item_mar}px * #{$public_item_pad - 1})) / #{$public_item_pad});
+	  width: -moz-calc((100% - ( #{$public_item_mar}px * #{$public_item_pad - 1})) / #{$public_item_pad});
+	  width: calc((100% - ( #{$public_item_mar}px * #{$public_item_pad - 1})) / #{$public_item_pad});
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(n + #{$public_item_pad + 1}){
+	   margin-top:  #{$public_item_mar}px;          
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(#{$public_item_pad}n){
+	   margin-right: 0px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.#{$public_wrap_div} .cu_l li{
+	  width: -webket-calc((100% - ( #{$public_item_mar}px * #{$public_item_pad2 - 1})) / #{$public_item_pad2});
+	  width: -moz-calc((100% - ( #{$public_item_mar}px * #{$public_item_pad2 - 1})) / #{$public_item_pad2});
+	  width: calc((100% - ( #{$public_item_mar}px * #{$public_item_pad2 - 1})) / #{$public_item_pad2});
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(n + #{$public_item_pad2 + 1}){
+	   margin-top:  #{$public_item_mar}px;          
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(#{$public_item_pad2}n){
+	   margin-right: 0px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.#{$public_wrap_div} .cu_l li{
+	  width: -webket-calc((100% - ( #{$public_item_mar2}px * #{$public_item_phone - 1})) / #{$public_item_phone});
+	  width: -moz-calc((100% - ( #{$public_item_mar2}px * #{$public_item_phone - 1})) / #{$public_item_phone});
+	  width: calc((100% - ( #{$public_item_mar2}px * #{$public_item_phone - 1})) / #{$public_item_phone});
+	  margin-right: #{$public_item_mar2 - 0.01}px;  
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(n + #{$public_item_phone + 1}){
+	   margin-top:  #{$public_item_mar2}px;          
+	}
+	.#{$public_wrap_div} .cu_l li:nth-child(#{$public_item_phone}n){
+	   margin-right: 0px;
+	}
+	.#{$public_wrap_div} .cu_l li:hover{
+		box-shadow: none;
+	}
+}

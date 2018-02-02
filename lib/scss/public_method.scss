@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+$tiny: 767px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+@mixin respond_to($breakpoint) {
+    @if $breakpoint == 'tiny' {
+        @media screen and (max-width: $tiny) {
+            @content;
+        }
+    } @else if $breakpoint == 'small' {
+        @media screen and (min-width: $small )  and (max-width: 991px){
+            @content;
+        }
+    } @else if $breakpoint == 'medium' {
+        @media screen and (min-width: $medium)  and (max-width: 1199px){
+            @content;
+        }
+    } @else if $breakpoint == 'large' {
+        @media screen and (min-width: $large) {
+            @content;
+        }
+    }
+}
+
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+@mixin public_shadow($transition_value: 0 0 0 rgba(0,0,0,.16)) {
+  -webkit-box-shadow: $transition_value;
+  -moz-box-shadow: $transition_value;
+  box-shadow: $transition_value;
+}
+
+
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+@mixin public_transition($transition_speed: .3s) {
+  -webkit-transtion: all $transition_speed ease-in-out;
+  -moz-transition: all $transition_speed ease-in-out;
+  transition: all $transition_speed ease-in-out;
+}
+
+
+@mixin public_delay($delay_speed: .3s) {
+    -webkit-transition-delay: $delay_speed;
+    -moz-transition-delay: $delay_speed;
+    transition-delay: $delay_speed;
+}
+@mixin public_transform($transform_value: none) {
+    -webkit-transform: $transform_value;
+    -moz-transform: $transform_value;
+    transform: $transform_value;
+}
+@mixin public_transform_translateY($transform_translateY_value: 0) {
+    -webkit-transform: translateY($transform_translateY_value);
+    -moz-transform: translateY($transform_translateY_value);
+    transform: translateY($transform_translateY_value);
+}
+@mixin public_transform_scale($transform_scale_value: 1.2) {
+    -webkit-transform: scale($transform_scale_value);
+    -moz-transform: scale($transform_scale_value);
+    transform: scale($transform_scale_value);
+}
+@mixin public_transform_rotateX($public_transform_rotateX_value: 0deg) {
+    -webkit-transform: rotateX($public_transform_rotateX_value);
+    -moz-transform: rotateX($public_transform_rotateX_value);
+    transform: rotateX($public_transform_rotateX_value);
+}
+@mixin public_transform_rotateY($public_transform_rotateY_value: 0deg) {
+    -webkit-transform: rotateY($public_transform_rotateY_value);
+    -moz-transform: rotateY($public_transform_rotateY_value);
+    transform: rotateY($public_transform_rotateY_value);
+}
+@mixin public_transform_rotateZ($transform_rotateZ_value: 0deg) {
+    -webkit-transform: rotateZ($transform_rotateZ_value);
+    -moz-transform: rotateZ($transform_rotateZ_value);
+    transform: rotateZ($transform_rotateZ_value);
+}
+@mixin public_transform_style($transform_style_value: preserve-3d) {
+    -webkit-transform-style: $transform_style_value;
+    -moz-transform-style: $transform_style_value;
+    transform-style: $transform_style_value;
+}
+@mixin public_backface_visibility($backface_visibility_value: hidden) {
+    -webkit-backface-visibility: $backface_visibility_value;
+    -moz-backface-visibility: $backface_visibility_value;
+    backface-visibility: $backface_visibility_value;
+}
+@mixin public_translate_3d($translate_3d_value: (0, 0, 0)) {
+    -webkit-transform: translate3d($translate_3d_value);
+    -moz-transform: translate3d($translate_3d_value);
+    transform: translate3d($translate_3d_value);
+}
+@mixin animation($animation_name, $animation_value) {
+    -webkit-animation: $animation_name $animation_value;
+    -moz-animation: $animation_name $animation_value;
+    animation: $animation_name $animation_value;
+}
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}

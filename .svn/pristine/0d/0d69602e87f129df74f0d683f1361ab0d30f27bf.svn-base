@@ -1,0 +1,15 @@
+<?php include "public/top.php";?>
+<!--start_template_plugin_self_css-->
+<!--end_template_plugin_self_css-->
+
+
+<?php include "public/all_css.php";?>
+</head>
+<body>
+<?php include "public/head.php";?>
+
+<?php include "public/footer.php";?>
+<?php include "public/bottom.php";?>
+
+<!--start_template_plugin_self_js-->
+<!--end_template_plugin_self_js-->

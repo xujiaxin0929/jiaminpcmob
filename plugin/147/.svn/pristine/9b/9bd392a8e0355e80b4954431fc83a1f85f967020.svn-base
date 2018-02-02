@@ -1,0 +1,158 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+.#{$public_wrap_div} {
+	width: $container_pc;
+	margin: 0 auto;
+}
+.#{$public_wrap_div} li {
+	padding: 30px 0;
+	overflow: hidden;
+	border-top: 1px solid #ececec;
+}
+.#{$public_wrap_div} li:first-child {
+	border-top: none;
+}
+.#{$public_wrap_div} .pl2-thumb {
+	float: right;
+	display: block;
+	width: 245px;
+	height: 140px;
+	overflow: hidden;
+}
+.#{$public_wrap_div} .pl2-thumb img {
+	width: 245px;
+	height: 140px;
+}
+.#{$public_wrap_div} .pl2-left, .#{$public_wrap_div} .pl2-info {
+	float: left;
+	display: block;
+}
+.#{$public_wrap_div} .pl2l-date span {
+	display: block;
+	color: #999;
+	font-size: 12px;
+}
+.#{$public_wrap_div} .pl2l-date span.pl2l-md {
+	font-size: 22px;
+}
+.#{$public_wrap_div} .pl2-left .pl2l-date, .#{$public_wrap_div} .pl2-left .pl2l-line {
+	float: left;
+}
+.#{$public_wrap_div} .pl2-left .pl2l-line {
+	width: 35px;
+	height: 1px;
+	margin-top: 15px;
+	margin-left: 10px;
+	background: #bdbdbd;
+	-webkit-transtion: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.#{$public_wrap_div} .pl2l-arrow {
+	width: 35px;
+	height: 35px;
+	margin-top: 10px;
+	background-image: url(images/icon_02.png);
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	-webkit-transtion: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.#{$public_wrap_div} .pl2-info {
+	display: block;
+	float: left;
+	width: 97%;
+	overflow: hidden;
+}
+.#{$public_wrap_div} .pl2-info span {
+	display: block;
+}
+.#{$public_wrap_div} .pl2-info .pl2i-tit {
+	color: #331;
+	font-size: 18px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.#{$public_wrap_div} .pl2-info .pl2i-info {
+	color: #999;
+	font-size: 12px;
+	line-height: 22px;
+	height: 44px;
+	overflow: hidden;
+	margin-top: 22px;
+}
+.#{$public_wrap_div} .pl2-info .pl2i-date {
+	display: none;
+	color: #B0B0AE;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.#{$public_wrap_div} .pl2-download {
+    float: right;
+    display: block;
+    font-size: 14px;
+    color: $theme_color;
+    overflow: hidden;
+    padding: 0px 14px 0 10px;
+    margin-top: 15px;
+    border: solid 1px $theme_color;
+    border-radius: 5px;
+}
+.#{$public_wrap_div} .pl2-download>span{
+	color: $theme_color;
+}
+.#{$public_wrap_div} li:hover .pl2-download>span{
+	color:#fff;
+}
+.#{$public_wrap_div} .pl2-download .download{
+	float:right;
+	padding-top:5px;
+}
+.#{$public_wrap_div} li:hover .pl2l-arrow {
+	background-position: center;
+	background-color: #004ea2;
+}
+.#{$public_wrap_div} li:hover .pl2-download{
+	color: #fff;
+	background: #f46500;
+}
+.#{$public_wrap_div} li:hover .pl2-info{
+	margin-left: 30px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.#{$public_wrap_div} {
+		width: $container_note_pc;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.#{$public_wrap_div} {
+		width: $container_pad;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.#{$public_wrap_div} {
+		width: $container_note_phone;
+	}
+	.#{$public_wrap_div} li:hover .pl2-info{
+		margin-left: 0;
+	}
+	.#{$public_wrap_div} li:hover .pl2-download{
+		background:#fff;
+	}
+	.#{$public_wrap_div} li:hover .pl2-download>span{
+		color: $theme_color;
+	}
+}
+
+.#{$public_wrap_div} li:hover .pl2-left .pl2l-line {
+	width: 70px;
+}
+
+

@@ -1,0 +1,16 @@
+{
+	"template_plugin_common_css":[
+		
+	],
+	"template_plugin_self_css":[
+		{"src": "http://cdn.bootcss.com/bxslider/4.2.5/jquery.bxslider.min.css", "is_outside": 1}
+		,{"src": "css/style.css"}
+	],
+	"template_plugin_common_js":[
+
+	],
+	"template_plugin_self_js":[
+		{"src": "js/jquery.bxslider.js"}
+		,{"src": "js/script.js"}
+	]
+}

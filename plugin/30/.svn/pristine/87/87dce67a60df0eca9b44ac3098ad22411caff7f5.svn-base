@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+.public_index_30 {
+  width: 90%;
+  max-width: 100%;
+  margin: 20px auto;
+  position: relative; }
+
+.public_index_30 .swiper-container {
+  padding: 10px; }
+
+.public_index_30 .cu_l li:hover {
+  box-shadow: 5px 5px 5px #dcdcdc; }
+
+.public_index_30 .cu_l li {
+  box-sizing: border-box;
+  height: auto;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out; }
+
+.public_index_30 .cu_l li a {
+  display: block; }
+
+.public_index_30 .cu_l li img {
+  width: 100%; }
+
+.public_index_30 .cu_box .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px; }
+
+.public_index_30 .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  margin-left: -32px; }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .public_index_30 {
+    width: 96%; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .public_index_30 {
+    width: 96%; } }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .public_index_30 {
+    width: 93.6%; }
+
+  .public_index_30 .swiper-pagination {
+    bottom: -0.6rem;
+    margin-left: -1rem; }
+
+  .public_index_30 .cu_box .swiper-pagination-bullet {
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0 0.08rem; }
+
+  .public_index_30 .cu_l li:hover {
+    box-shadow: none; } }
+
+/*# sourceMappingURL=style.css.map */

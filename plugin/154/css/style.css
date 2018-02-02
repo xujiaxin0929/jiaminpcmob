@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: item_pc_num
+    title: 电脑端一排显示数量
+    zhiyu: 1-5
+    beizhu:
+*/
+/**
+    name: item_padw_num
+    title: 平板电脑（横）一排显示数量
+    zhiyu: 1-4
+    beizhu:
+*/
+/**
+    name: item_padn_num
+    title: 平板电脑（竖）一排显示数量
+    zhiyu: 1-4
+    beizhu:
+*/
+/**
+    name: item_phone_num
+    title: 手机端一排显示数量
+    zhiyu: 1-2
+    beizhu:
+*/
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+.public_pagination_154 {
+  width: 90%;
+  font-family: "Microsoft Yahei";
+  margin: 0 auto; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .public_pagination_154 {
+    width: 96%; } }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .public_pagination_154 {
+    width: 96%; } }
+@media screen and (max-width: 767px) {
+  .public_pagination_154 {
+    width: 100%; } }
+.public_pagination_154 .pagination {
+  display: block;
+  margin: 54px 0 44px 0;
+  font-size: 0px;
+  line-height: normal;
+  text-align: center; }
+
+.public_pagination_154 .pagination li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  margin-left: 10px; }
+
+.public_pagination_154 .pagination li.active a {
+  color: #fff;
+  background-color: #337ab7; }
+
+.public_pagination_154 .pagination li:hover a {
+  color: #fff;
+  background-color: #337ab7; }
+
+.public_pagination_154 .pagination li a, .pagination li span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  color: #000;
+  padding: 0;
+  border-radius: 5px !important;
+  background: #fafafa; }
+
+.public_pagination_154 .m_pagination {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .public_pagination_154 .sn_outbox {
+    width: 100%; }
+
+  .public_pagination_154 .news_list.newscenter_list {
+    width: 100%; }
+
+  .public_pagination_154 .pagination_pc {
+    display: none; }
+
+  .public_pagination_154 .m_pagination {
+    display: block;
+    margin-bottom: 1.04rem; }
+
+  .public_pagination_154 .m_pagination .pagination {
+    margin: 0; }
+
+  .public_pagination_154 .m_pagination .pagination li.active a {
+    color: #ff1a1a;
+    border-color: #ff1a1a; }
+
+  .public_pagination_154 .m_pagination .pagination li {
+    display: inline-block;
+    width: 2.68rem;
+    height: 0.9rem;
+    margin: 0 0.21rem; }
+
+  .public_pagination_154 .m_pagination .pagination li a {
+    display: block;
+    width: 2.66rem;
+    height: 0.88rem;
+    color: #ccc;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.88rem;
+    border: 1px solid #ccc;
+    border-radius: 0 !important;
+    background: #fff;
+    -webkit-transtion: all 0s ease-in-out;
+    -moz-transtion: all 0s ease-in-out;
+    -ms-transtion: all 0s ease-in-out;
+    -o-transtion: all 0s ease-in-out;
+    transition: all 0s ease-in-out; }
+
+  .public_pagination_154 .m_pagination p {
+    text-align: center;
+    margin-top: 1.56rem; }
+
+  .public_pagination_154 .m_pagination p span {
+    display: inline-block;
+    width: 2.68rem;
+    height: 0.9rem;
+    margin: 0 0.21rem; } }
+
+/*# sourceMappingURL=style.css.map */

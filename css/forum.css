@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+.forum{
+	background: #f7f7f7;
+	padding: 0px;
+}
+.fb{
+	color: #fff;
+	font-size: 16px;
+	width: 127px;
+	height: 43px;
+	border: none;
+	border-radius: 4px;
+	background: #c81111;
+}
+.forum .fb_but{
+	width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.forum .fb_but button{
+	margin-top: 10px;
+}
+.fb_sel{
+	margin: 30px 0;
+}
+.fb_sel li{
+	float: left;
+	width: 94px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 4px;
+	margin-right: 14px;
+	border: 1px solid #ddd;
+}
+.fb_sel li a{
+	display: block;
+	color: #333;
+	font-size: 14px;
+}
+.fb_sel .active{
+	border-color: #007bc2;
+	background: #c81111;
+}
+.fb_sel .active a{
+	color: #fff;
+}
+.sel_re_list{
+	background: #fff;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 21px 16px;
+	border: none;
+}
+.table>tbody>tr>td:first-child{
+	width: 68%;
+	padding-left: 52px;
+	background: url(../images/fb_icon.png) no-repeat 16px center;
+}
+.table>tbody>tr>td:first-child a{
+	color: #c81111;
+}
+.forum .public_pagination_154{
+	width: auto;
+	float: right;
+}
+.forum .public_pagination_154 .pagination{
+	margin: 20px 0 30px 0;
+}
+
+
+.sel_re_list_m li{
+	padding: 0.35rem 3%;
+	border-bottom: 1px solid #e4e4e4;
+}
+.sel_re_list_m li a{
+	display: block;
+	color: #333;
+	font-size: 0.32rem;
+	margin-bottom: 0.2rem;
+}
+.sel_re_list_m li div{
+	color: #999;
+	font-size: 0.24rem;
+}
+.sel_re_list_m li div span{
+	margin-right: 0.7rem;
+}
+.m_fb_btn{
+	height: 1rem;
+}
+.m_fb_btn div{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	line-height: 1rem;
+	background: #fff;
+	z-index: 99;
+	text-align: center;
+}
+.m_fb_btn div img{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-right: 0.3rem;
+}
+
+
+/*发布      开始*/
+.release_box{
+	padding-top: 0px;
+}
+.release{
+	padding: 26px;
+	background: #fff;
+}
+.release h4{
+	color: #b31d23;
+	font-size: 24px;
+	margin-bottom: 18px;
+}
+.release select , .release input , .release textarea{
+	height: 42px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.release select{
+	width: 125px;
+	padding: 0 12px;
+	margin-right: 10px;
+}
+.release input{
+	width: 456px;
+	text-indent: 16px;
+}
+.release textarea{
+	display: block;
+	width: 100%;
+	height: 288px;
+	margin-top: 20px;
+	padding: 10px;
+}
+.release button , .date_text button{
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	width: 128px;
+	height: 43px;
+	background: #b31d23;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+
+
+
+/*论坛详情         开始*/
+.forum_deta h4{
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f7f7f7;
+	margin-top: 0;
+}
+.forum_deta .date{
+	color: #999;
+	font-size: 14px;
+}
+.forum_deta .date span{
+	margin-right: 18px;
+}
+.forum_deta .cont_txt{
+	margin: 34px 0;
+}
+.date_text{
+	margin-top: 20px;
+	position: relative;
+}
+.date_text textarea{
+	display: block;
+	width: 100%;
+	height: 100px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: #a1a1a1;
+	
+}
+.date_text .pc_btn{
+display: block;
+  width: 126px;
+  height: 100px;
+  background-color: #0f6dc9;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 100px;
+  border:none;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  right: 1px;
+}
+.date_text .pc_btn_change{
+	top: 0px;
+}
+.date_text a{
+	color: #0186d3;
+}
+.forum_m{
+	display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+	.forum_pc{
+		display: none;
+	}
+	.forum_m .public-nav-136_3{
+		height: auto;
+	}
+	.forum_m{
+		display: block;
+		margin-top: 0.9rem;
+	}
+	
+	
+	/*发布      开始*/
+	.release_box{
+		padding: 0.4rem 0;
+	}
+	.release_box .content{width: 100%;}
+	.release{padding: 0.3rem;}
+	.release input {margin-top: 14px;}
+	.release input , .release textarea{width: 100%;}
+	.forum_deta h4{font-size: 0.46rem;}
+	.forum_deta .cont_txt{margin: 0.3rem 0;}
+	.date_text{padding: 0 3%;display: none;}
+	
+	.public_list_159 .commont{
+		padding: 0.4rem 3%;
+	}
+}

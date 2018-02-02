@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+    name: public_slide_1
+    title: 外层class名
+    zhiyu: *
+    beizhu:
+*/
+$public_wrap_div: public-slide-8;
+
+
+/**
+    name: is_show_controls
+    title: 是否显示左右箭头
+    zhiyu: true或false
+    beizhu:
+*/
+$is_show_controls: true;
+
+
+/**
+    name: is_show_pages
+    title: 是否显示小点
+    zhiyu: true或false
+    beizhu:
+*/
+$is_show_pages: true;
+
+
+/**
+    name: is_show_text
+    title: 是否显示文字
+    zhiyu: true或false
+    beizhu:
+*/
+$is_show_text: true;
+
+
+/**
+    name: is_show_downSider
+    title: 是否显示向下箭头
+    zhiyu: true或false
+    beizhu:
+*/
+$is_show_downSider: true;

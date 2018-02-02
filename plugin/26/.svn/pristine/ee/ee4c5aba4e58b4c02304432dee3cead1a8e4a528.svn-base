@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+$public_wrap_div: public-index-26;
+
+
+/**
+    name: item_pc_num
+    title: 电脑端一排显示数量
+    zhiyu: 1-5
+    beizhu:
+*/
+$item_pc_num: 4;
+
+
+/**
+    name: item_padw_num
+    title: 平板电脑（横）一排显示数量
+    zhiyu: 1-4
+    beizhu:
+*/
+$item_padw_num: 3;
+
+
+/**
+    name: item_padn_num
+    title: 平板电脑（竖）一排显示数量
+    zhiyu: 1-4
+    beizhu:
+*/
+$item_padn_num: 3;
+
+
+/**
+    name: item_phone_num
+    title: 手机端一排显示数量
+    zhiyu: 1-2
+    beizhu:
+*/
+$item_phone_num: 2;

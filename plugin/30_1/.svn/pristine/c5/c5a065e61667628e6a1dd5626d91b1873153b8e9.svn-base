@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_mar
+    title: pc间距
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_mar2
+    title: 手机间距
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_num
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_pad
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_pad2
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: public_item_phone
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+
+/*# sourceMappingURL=config.css.map */

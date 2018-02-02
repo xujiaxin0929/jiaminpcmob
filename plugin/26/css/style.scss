@@ -1,0 +1,193 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+$item_interval_top: 15px;
+$item_interval_left: 15px;
+
+
+.#{$public_wrap_div} {
+	width: $container_pc;
+	margin: 0 auto;
+}
+.#{$public_wrap_div} .pi26-list {
+	margin-top: -#{$item_interval_top};
+    margin-left: -#{$item_interval_left};
+}
+.#{$public_wrap_div} .pi26-list li {
+	float: left;
+    width: -webket-calc((100% - (#{$item_interval_left} * (#{$item_pc_num} - 1))) / #{$item_pc_num});
+    width: -moz-calc((100% - (#{$item_interval_left} * (#{$item_pc_num} - 1))) / #{$item_pc_num});
+    width: calc((100% - (#{$item_interval_left} * #{$item_pc_num})) / #{$item_pc_num});
+    margin-top: $item_interval_top;
+    margin-left: $item_interval_left;
+}
+.#{$public_wrap_div} .pi26-list li .pi26-thumb {
+	display: block;
+	position: relative;
+}
+.#{$public_wrap_div} .pi26-list li .pi26t-date {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #c92007;
+	color: #FFF;
+	padding: 10px 8px;
+}
+.#{$public_wrap_div} .pi26-list li .pi26td-d {
+	display: block;
+	text-align: center;
+	font-size: 32px;
+	line-height: 32px;
+	color: #fff;
+}
+.#{$public_wrap_div} .pi26-list li .pi26td-ym {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	margin-top: 10px;
+}
+.#{$public_wrap_div} .pi26-list li .pi26-content {
+	padding: 30px 20px 20px;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26-content {
+	background-color: #c92007;
+}
+.#{$public_wrap_div} .pi26-list li .pi26c-tit {
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+	font-size: 16px;
+	color: #333333;
+	position: relative;
+	padding-bottom: 17px;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26c-tit {
+	color: #FFF;
+}
+.#{$public_wrap_div} .pi26-list li .pi26c-tit::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #c92007;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26c-tit::after {
+	background-color: #FFF;
+}
+.#{$public_wrap_div} .pi26-list li .pi26c-info {
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	color: #666666;
+	line-height: 26px;
+	margin-top: 20px;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26c-info {
+	color: #FFF;
+}
+.#{$public_wrap_div} .pi26-list li .pi26c-more {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #666666;
+	line-height: 12px;
+	margin-top: 10px;
+	padding-right: 20px;
+	position: relative;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26c-more {
+	color: #FFF;
+}
+.#{$public_wrap_div} .pi26-list li .pi26c-more::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -5px;
+	width: 10px;
+	height: 10px;
+	background-image: url(images/mdw1.png);
+	background-repeat: no-repeat;
+	background-position: -10px center;
+	background-size: auto 10px;
+	@include public_transition();
+}
+.#{$public_wrap_div} .pi26-list li:hover .pi26c-more::after {
+	background-position: 0px center;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.#{$public_wrap_div} {
+		width: $container_note_pc; 
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.#{$public_wrap_div} {
+		width: $container_pad; 
+	}
+
+	.#{$public_wrap_div} .pi26-list li {
+		float: left;
+	    width: -webket-calc((100% - (#{$item_interval_left} * (#{$item_padw_num} - 1))) / #{$item_padw_num});
+	    width: -moz-calc((100% - (#{$item_interval_left} * (#{$item_padw_num} - 1))) / #{$item_padw_num});
+	    width: calc((100% - (#{$item_interval_left} * #{$item_padw_num})) / #{$item_padw_num});
+	    margin-top: $item_interval_top;
+	    margin-left: $item_interval_left;
+	}
+}
+
+
+@include respond_to('tiny') {	
+	.#{$public_wrap_div} {
+		width: $container_note_phone; 
+	}
+	.#{$public_wrap_div} .pi26-list li {
+	    width: -webket-calc((100% - (#{$item_interval_left} * (#{$item_phone_num} - 1))) / #{$item_phone_num});
+	    width: -moz-calc((100% - (#{$item_interval_left} * (#{$item_phone_num} - 1))) / #{$item_phone_num});
+	    width: calc((100% - (#{$item_interval_left} * #{$item_phone_num})) / #{$item_phone_num});
+	}
+	.#{$public_wrap_div} .pi26-list li .pi26-content {
+		padding: 0.3rem 0 0;
+	}
+	.#{$public_wrap_div} .pi26-list li:hover .pi26-content{
+		background: transparent;
+	}
+	.#{$public_wrap_div} .pi26-list li:hover .pi26c-tit{
+		color: #333; 
+	}
+	.#{$public_wrap_div} .pi26-list li:hover .pi26c-info {
+		color: #666; 
+	}
+	.#{$public_wrap_div} .pi26-list li:hover .pi26c-more {
+		color: #666; 
+	}
+	.#{$public_wrap_div} .pi26-list li:hover .pi26c-tit::after {
+	    background-color: #c92007;
+	}
+	.#{$public_wrap_div} .pi26-list li {
+		margin-top: 0.4rem;
+	}
+	.public-index-26 .pi26-list li .pi26c-tit {
+		padding-bottom: 0.2rem;
+	}
+	.public-index-26 .pi26-list li .pi26c-info {
+		margin-top: 0.2rem;
+	}
+}

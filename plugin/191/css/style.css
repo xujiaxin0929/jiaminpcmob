@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class名
+    zhiyu:
+    beizhu:
+*/
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+.public-index-191 .pc_head {
+  height: 96px;
+  background: #06090f; }
+
+.public-index-191 .content {
+  width: 1420px;
+  margin: 0 auto; }
+
+.public-index-191 .head_left {
+  width: 80%;
+  float: left;
+  height: 96px;
+  position: relative; }
+  .public-index-191 .head_left .logo {
+    margin-top: 14px;
+    width: 218px;
+    float: left; }
+  .public-index-191 .head_left .menu {
+    float: left;
+    margin: 52px 0 0 80px; }
+
+.public-index-191 .head_left .menu > li {
+  float: left;
+  margin-right: 40px;
+  height: 44px;
+  position: relative; }
+  .public-index-191 .head_left .menu > li a {
+    color: #fff;
+    font-size: 18px; }
+
+.public-index-191 .head_left .nav_pred {
+  display: none;
+  width: 100%;
+  height: 289px;
+  position: fixed;
+  left: 0;
+  top: 96px;
+  background: #324a5c;
+  z-index: 11; }
+
+.public-index-191 .head_left .nav_pred ul li a:hover {
+  color: #b31d23; }
+
+.public-index-191 .head_left .nav_layer_pro {
+  display: none;
+  width: 618px;
+  height: 289px;
+  position: absolute;
+  left: -40px;
+  top: 44px;
+  padding: 38px;
+  background: #324a5c;
+  z-index: 11; }
+
+.public-index-191 .head_left .nav_layer_pro ul {
+  width: 216px;
+  float: left; }
+  .public-index-191 .head_left .nav_layer_pro ul li {
+    float: left;
+    margin: 0 60px 26px 0; }
+    .public-index-191 .head_left .nav_layer_pro ul li a {
+      font-size: 16px;
+      color: #c4c4c4; }
+    .public-index-191 .head_left .nav_layer_pro ul li a:hover {
+      color: #ffffff; }
+  .public-index-191 .head_left .nav_layer_pro ul li:nth-child(2n) {
+    margin-right: 0; }
+.public-index-191 .head_left .nav_layer_pro .thumb {
+  width: 278px;
+  float: right; }
+
+.public-index-191 .head_left .nav_pred .wrap {
+  width: 760px;
+  margin: 0 auto; }
+  .public-index-191 .head_left .nav_pred .wrap li {
+    float: left;
+    width: 190px;
+    height: 289px;
+    padding: 60px 40px 0; }
+    .public-index-191 .head_left .nav_pred .wrap li a {
+      font-size: 14px;
+      display: block;
+      color: #c4c4c4;
+      margin-bottom: 18px; }
+    .public-index-191 .head_left .nav_pred .wrap li a:hover {
+      color: #fff; }
+    .public-index-191 .head_left .nav_pred .wrap li a:nth-child(1) {
+      font-size: 18px; }
+  .public-index-191 .head_left .nav_pred .wrap li:hover {
+    background: #2e4556; }
+
+.public-index-191 .head_left .line {
+  position: absolute;
+  bottom: 0px;
+  width: 36px;
+  height: 4px;
+  left: 298px;
+  font-size: 3px;
+  background-color: #b31d23; }
+
+.public-index-191 .head_right {
+  width: 20%;
+  float: right;
+  padding-top: 34px; }
+  .public-index-191 .head_right li {
+    height: 96px;
+    float: left;
+    margin-left: 25px; }
+    .public-index-191 .head_right li img {
+      margin-right: 10px; }
+    .public-index-191 .head_right li a {
+      color: #999;
+      font-size: 14px; }
+
+.public-index-191 .head_right .group {
+  position: relative; }
+  .public-index-191 .head_right .group div {
+    display: none;
+    position: absolute;
+    left: -100px;
+    top: 50px;
+    width: 258px;
+    height: 112px;
+    background: #fff;
+    padding: 20px; }
+    .public-index-191 .head_right .group div a {
+      display: block;
+      margin-bottom: 10px; }
+
+.public-index-191 .head_right .group:hover div {
+  display: block; }
+
+.public-index-191 .phone-logo-box {
+  display: table;
+  float: left;
+  height: 58px;
+  width: 60%;
+  overflow: hidden; }
+
+.public-index-191 a.phone-logo {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 10px; }
+
+.public-index-191 a.phone-logo img {
+  display: block;
+  max-width: 100%;
+  height: calc(100% - 20px); }
+
+.public-index-191 .hamburger {
+  padding: 15px 15px;
+  display: block;
+  float: right;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+
+.public-index-191 .hamburger:hover {
+  opacity: 0.7; }
+
+.public-index-191 .hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: block;
+  position: relative; }
+
+.public-index-191 .hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+
+.public-index-191 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
+
+.public-index-191 .hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; }
+
+.public-index-191 .hamburger-inner::before {
+  top: -10px; }
+
+.public-index-191 .hamburger-inner::after {
+  bottom: -10px; }
+
+.public-index-191 .hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.public-index-191 .hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
+
+.public-index-191 .hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+html.mm-opened .hamburger--squeeze .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-delay: 0.14s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+html.mm-opened .hamburger--squeeze .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
+
+html.mm-opened .hamburger--squeeze .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease, -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.public-index-191 #header_phone {
+  display: none; }
+
+@media only screen and (max-width: 1400px) {
+  .public-index-191 .content {
+    width: 1200px;
+    margin: 0 auto; } }
+@media only screen and (max-width: 992px) {
+  .public-index-191 .pc_head {
+    display: none; }
+
+  .public-index-191 #header_phone {
+    display: block;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    overflow: hidden;
+    z-index: 5;
+    background: #06090f; } }
+
+/*# sourceMappingURL=style.css.map */

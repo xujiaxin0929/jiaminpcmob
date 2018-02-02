@@ -1,0 +1,501 @@
+@import "config";
+@import "../../../lib/scss/config";
+
+.hide{
+  display: none !important;
+}
+.show{
+  display: block !important;
+}
+img{
+  display: inline;
+}
+.#{$public_wrap_div}{
+  width: 100%;
+}
+.#{$public_wrap_div} .commont{
+  width: $container_pc;
+  border: 1px solid #e5e5e5;
+  margin:0 auto;
+}
+.#{$public_wrap_div} .commont .publish_commont{
+  padding: 30px 16px 0 16px;
+  margin-bottom: 60px;
+}
+.#{$public_wrap_div} .commont .publish_commont .top{
+  margin-bottom: 20px;
+}
+.#{$public_wrap_div} .commont .publish_commont .top .xingping{
+  float: left;
+}
+.#{$public_wrap_div} .commont .publish_commont .top .xingping img{
+  display: inline-block;
+}
+.#{$public_wrap_div} .commont .publish_commont .top .commont_num{
+  float: right;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333;
+} 
+.#{$public_wrap_div} .commont .publish_commont .top .commont_num span{
+  font-size: 12px;
+  color: #ff0000;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom{
+  position: relative;
+  width: 100%;
+  height: 98px;
+  border: 1px solid #0f6dc9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .write_article{
+  width: 100%;
+  height: 124px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .write_article textarea{
+  display: block;
+  width: 100%;
+  height: 96px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article{
+  width: 100%;
+  height: 44px;
+  background: #f6f6f6;
+}
+
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article input:focus{
+  border: 1px solid #1d87e4 !important;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article input[type="text"]{
+  float: left;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background: #fff;
+  outline: none;
+  margin: 7px 0 0 12px;
+  padding-left: 16px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article input[type="password"]{
+  float: left;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background: #fff;
+  outline: none;
+  margin: 7px 0 0 12px;
+  padding-left: 16px;
+}
+
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article .pic{
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin: 5px 0 0 15px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article .pic img{
+  width: 100%;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article .name{
+  float: left;
+  width: 70px;
+  height: 44px;
+  font-size: 12px;
+  color: #404040;
+  line-height: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 0 10px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article ul{
+  float: left;
+  margin: 12px 0 0 5px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article ul a{
+  color: #008cd2;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article ul a:hover{
+  text-decoration: underline;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article ul span{
+  color: #ddd;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .login_public_article .submit_article_login {
+  float: right;
+  width: 124px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background: #0f6dc9;
+  cursor: pointer;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .submit_article{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 124px;
+  height: 100%;
+  text-align: center;
+  line-height: 18px;
+  font-size: 16px;
+  color: #fff;
+  background: #0f6dc9;
+  cursor: pointer;
+}
+.#{$public_wrap_div} .commont .publish_commont .bottom .submit_article span{
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  margin: 24px auto 14px auto;
+}
+.#{$public_wrap_div} .commont .published_commont{
+  padding: 0 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .noCommont{
+  line-height:44px;
+  font-size: 14px;
+  color: #666;
+  margin-top: -40px;
+  padding-left: 5px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one:last-child{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one{
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 40px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .pic{
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .pic img{
+  width: 100%;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content{
+  float: left;
+  width: auto;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title{
+  width: 100%;
+  padding-top: 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .nicheng {
+  float: left;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333;
+  margin-right: 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .data {
+  float: left;
+  line-height: 16px;
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-right: 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .evaluate {
+  float: left;
+  line-height: 16px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .text {
+  line-height: 28px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 12px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .huifu {
+  line-height: 28px;
+  font-size: 12px;
+  color: #ff0000;
+  margin-top: 6px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .zan{
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.active .zan_img img{
+    margin-top: -20px;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .zan .zan_img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.#{$public_wrap_div} .commont .published_commont .published_commont_one .content .title .zan i{
+    font-style: initial;
+    color: #999;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.#{$public_wrap_div} .commont .more_commont_box{
+  width: 100%;
+  padding: 0 16px 48px 16px;
+}
+.#{$public_wrap_div} .commont .more_commont_box .more_commont{
+  width: 100%; 
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.#{$public_wrap_div} .commont .more_commont_box .more_commont span{
+  position: relative;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.#{$public_wrap_div} .commont .more_commont_box .more_commont span:before{
+  position: absolute;
+  top: -24px;
+  left: -12px;
+}
+.bottom_focus{
+  height: 168px !important;
+}
+.submit_article_focus{
+  top: 124px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 14px !important;
+}
+.public_list_159 .commont .publish_commont .commont_phone {
+  display: none;
+}
+.public_list_159 .fabiao_commonts{
+  display: none;
+}
+.public_list_159 .noMore{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 0px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .#{$public_wrap_div} .commont {
+    width: $container_note_pc;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .#{$public_wrap_div} .commont {
+    width: $container_pad;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .public_list_159 .commont {
+    width: $container_note_phone;
+    border: none;
+  }
+  .public_list_159 .commont .published_commont{
+    padding: 0 0 0.3rem 0;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one{
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .pic{
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-right: 0.16rem;
+  } 
+  .public_list_159 .commont .published_commont .published_commont_one .content .title{
+    padding-top: 0.05rem;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .title .nicheng{
+    line-height: 0.3rem;
+    font-size: 0.28rem;
+    margin: 0 0.18rem 0.1rem 0;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .title .data{
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    margin-right: 0.26rem;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .title .evaluate {
+    width: auto !important;
+    line-height: 0.2rem; 
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .title .evaluate img{
+    width: 0.26rem;
+    height: 0.26rem; 
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .text{
+    line-height: 0.48rem;
+    font-size: 0.32rem;
+    margin-top: 0.12rem;
+  }
+  .public_list_159 .commont .published_commont .published_commont_one .content .huifu {
+    line-height: 0.48rem;
+    font-size: 0.24rem;
+    margin-top: 0.06rem;
+  }
+  .public_list_159 .commont .more_commont_box .more_commont {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    margin-top: 0;
+  }
+  .public_list_159 .commont .more_commont_box .more_commont span {
+    font-size: 0.28rem;
+    padding-right: 0.22rem;
+  }
+  .public_list_159 .commont .more_commont_box .more_commont span:before {
+    position: absolute;
+    top: -0.39rem;
+    left: -0.14rem;
+  }
+
+  .public_list_159 .commont .publish_commont {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.9rem;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+    padding: 0;
+    margin-bottom: 0;
+    z-index: 999;
+  }
+  .#{$public_wrap_div} .commont .publish_commont .top{
+    display: none;
+  }
+  .#{$public_wrap_div} .commont .publish_commont .bottom{
+    display: none;
+  }
+  .public_list_159 .commont .publish_commont .commont_phone{
+    display: block;
+    width: 100%;
+    height: 0.9rem;
+  }
+  .public_list_159 .commont .publish_commont .commont_phone .commont_phone_submit{
+    float: left;
+    height: 0.9rem;
+    font-size: 0.28rem;
+    color: #666;
+    border: none;
+    outline: none;
+    background: #fff;
+    margin-left: 0.24rem;
+  }
+  .public_list_159 .commont .publish_commont .commont_phone .commont_phone_submit{
+    display: block;
+    line-height: 0.9rem;
+  } 
+  .public_list_159 .commont .publish_commont .commont_phone .commont_phone_submit span{
+    float: left;
+    font-size: 0.5rem;
+    margin-right: 0.2rem;
+    margin-top: -0.04rem;
+  }
+  .public_list_159 .commont .publish_commont .commont_phone .publiced_commont_phone{
+    float: right;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.28rem;
+    color: #666;
+    margin-right: 0.78rem;
+  }
+  .public_list_159 .commont .publish_commont .commont_phone .publiced_commont_phone span{
+    float: left;
+    font-size:0.48rem;
+    color: #d81e06;
+    margin-top: 0.04rem;
+    margin-right: 0.14rem;
+  }
+  .public_list_159 .commont .more_commont_box {
+    padding: 0 16px 1.3rem 16px;
+  }
+
+
+  .public_list_159 .fabiao_commonts{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 999;
+  }
+  .public_list_159 .fabiao_commonts .fabiao_commonts_box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.92rem;
+    background: #fff;
+    padding-top: 0.32rem;
+  }
+  .public_list_159 .fabiao_commonts .fabiao_commonts_box textarea{
+    display: block;
+    width: 6.78rem;
+    height: 1.32rem;
+    font-size: 0.28rem;
+    border: none;
+    background: #f4f4f4;
+    outline: none;
+    padding: 0.2rem;
+    margin: 0 auto;
+  }
+  .public_list_159 .fabiao_commonts .fabiao_commonts_box span{
+    position: absolute;
+    top: 1.92rem;
+    left: 0.46rem;
+    font-size: 0.44rem;
+  }
+  .public_list_159 .fabiao_commonts .fabiao_commonts_box .fabiao_commonts_send{
+    position: absolute;
+    top: 1.92rem;
+    right: 0.38rem;
+    width: 1.02rem;
+    height: 0.52rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.28rem;
+    color: #999;
+    border: 1px solid #999;
+  }
+  .public_list_159 .noMore{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.32rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+

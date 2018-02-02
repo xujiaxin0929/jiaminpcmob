@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/**
+    name: public_wrap_div
+    title: 外层class
+    zhiyu: *
+    beizhu:
+*/
+$public_wrap_div: public_index_30;
+
+/**
+    name: public_item_mar
+    title: pc间距
+    zhiyu: *
+    beizhu:
+*/
+$public_item_mar: 20;
+
+/**
+    name: public_item_mar2
+    title: 手机间距
+    zhiyu: *
+    beizhu:
+*/
+$public_item_mar2: 10;
+
+/**
+    name: public_item_num
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+$public_item_num: 5;
+
+/**
+    name: public_item_pad
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+$public_item_pad: 4;
+
+/**
+    name: public_item_pad2
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+$public_item_pad2: 3;
+
+/**
+    name: public_item_phone
+    title: 一行元素个数
+    zhiyu: *
+    beizhu:
+*/
+$public_item_phone: 2;
+
+
+

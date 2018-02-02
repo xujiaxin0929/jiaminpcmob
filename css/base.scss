@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+
+	margin:0;
+
+	padding:0;		box-sizing:content-box;	font-family: "微软雅黑";
+
+}
+
+img{
+
+	display:block;
+
+}
+
+a{
+
+	color:#000;
+
+	text-decoration:none;
+
+}
+
+.show_b{
+
+	display:block !important;
+
+}
+
+.hide{
+
+	display:none !important;
+
+}
+
+.fl{
+
+	float:left !important;
+
+}
+
+.fr{
+
+	float:right !important;
+
+}
+
+.clear{
+
+	clear:both !important;
+
+}
+
+
+
+input , textarea{	outline: none;	border: none;}
+
+/*公司简介—概述左侧分类字体颜色*/
+
+.gs_gaishu_color{
+
+	color:#0b417d !important;
+
+}
+
+/*公司简介—概述左侧分类字体颜色*/
+
+
+
+
+
+/*公司简介—概述左侧分类背景颜色*/
+
+.gs_gaishu_bgColor{
+
+	background:#f8f8f8;
+
+}
+
+/*公司简介—概述左侧分类背景颜色*/
+
+
+
+
+
+/*公司简介—概述左侧分类左边线颜色*/
+
+.line_01_bgColor{
+
+	background:#0b417d !important;
+
+}
+
+/*公司简介—概述左侧分类左边线颜色*/
+
+
+
+
+
+/*公司简介—概述左侧分类active*/
+
+.first_nav>li>.active{
+
+	background:#0b417d !important;
+
+}
+
+/*公司简介—概述左侧分类active*/.form-control{	box-shadow: none;	padding: 0 10px;}.form-control:focus , .form-control{	box-shadow: none;}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+select,
+form images,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+input,
+img {
+  vertical-align: middle;
+}
+a:hover, a:visited, a:active {
+    color: #333333;
+}
+body {
+  color: #000;
+  font-family: "Microsoft YaHei";
+  background: #f7f7f7;
+  overflow-x: hidden;
+}
+

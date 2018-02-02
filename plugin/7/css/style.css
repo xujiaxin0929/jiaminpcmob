@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/**
+    name: public_wrap_div
+    title: 外层class名
+    zhiyu: *
+    beizhu:
+*/
+/**
+    name: wrap_inner_width
+    title: 内容宽度
+    zhiyu:
+    beizhu:
+*/
+/**
+  name: container_pc
+  title: innerWidth 大于 1200时素材最外层盒子的宽度，默认值为90%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_pc
+  title: 992 小于 innerWidth 小于 1199时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_pad
+  title: 768 小于 innerWidth 小于 991时素材最外层盒子的宽度，默认值为96%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_note_phone
+  title: innerWidth 小于 767时素材最外层盒子的宽度，默认值为93.6%
+  zhiyu: 90% - 100%
+  beizhu:
+*/
+/**
+  name: container_max_width
+  title: 给素材最外层盒子限制最大宽度，默认值为100%
+  zhiyu: 90% / px / rem 
+  beizhu:
+*/
+/**
+  name: theme_color
+  title: 网站的主题颜色
+  zhiyu: 
+  beizhu:
+*/
+/**
+ * [breakpoints 响应节点]
+ * @param  [type] $array [数组]
+ * @param  string $value [键]
+ * @return [type]        [返回一维数组]
+ */
+/** 
+ * 定义响应式值变量
+ * $tiny为手机端响应节点尺寸
+ * $small为竖版平板节点尺寸
+ * $medium为横版平板节点尺寸
+ * $large为电脑端节点尺寸
+ */
+/**
+ * [respond_to 处理响应式方法]
+ * @param  {[type]} $breakpoint [响应节点变量]
+ * @return {[type]}             [响应css语句]
+ */
+/**
+ * [public_shadow 元素阴影效果]
+ * @param  {[type]} $transition_value: 0             0 0 rgba(0,0,0,.16) [阴影颜色值]
+ * @return {[type]}                    [css阴影效果]
+ */
+/**
+ * [public_transition 动画预处理库]
+ * @param  {[type]} $transition_speed: .3s           [速度时间]
+ * @return {[type]}                    [动画库]
+ */
+.public-head-7 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 4; }
+
+.public-head-7 .public-head-7-inner-box {
+  position: relative;
+  z-index: 4;
+  border-bottom: solid 1px #e6e6e6; }
+
+.public-head-7.fixed .public-head-7-inner-box {
+  background-color: #FFF;
+  border-bottom-color: #e3e3e3; }
+
+.public-head-7 .public-head-7-inner {
+  width: 87.4%;
+  margin: 0 auto;
+  padding-top: 15px; }
+
+.public-head-7 .ph7-logo {
+  float: left;
+  max-width: 200px;
+  height: 47px;
+  overflow: hidden; }
+
+.public-head-7 .ph7-logo a {
+  display: block; }
+
+.public-head-7 .ph7-logo a img {
+  display: block;
+  height: 47px; }
+
+.public-head-7.fixed .ph7-logo a {
+  margin-top: -47px; }
+
+.public-head-7 .hamburger {
+  display: none;
+  padding: 0;
+  float: right;
+  height: 47px; }
+
+.public-head-7 .hamburger::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0px; }
+
+.public-head-7 .hamburger-box {
+  width: 36px;
+  vertical-align: middle; }
+
+.public-head-7 .hamburger-inner, .public-head-7 .hamburger-inner:after, .public-head-7 .hamburger-inner:before {
+  width: 36px; }
+
+.public-head-7 .ph7-pc-nav-box {
+  float: right; }
+
+.public-head-7 .ph7-pc-nav li {
+  float: left;
+  margin-left: 25px;
+  position: relative; }
+
+.public-head-7 .ph7-pc-nav li:first-child {
+  margin-left: 0; }
+
+.public-head-7 .ph7-pc-nav li .nav-item {
+  display: block;
+  color: #979797;
+  font-size: 14px;
+  width: 81px;
+  height: 62px;
+  line-height: 47px;
+  white-space: nowrap; }
+
+.public-head-7 .ph7-pc-nav li .nav-item:hover, .public-head-7 .ph7-pc-nav li.active .nav-item, .public-head-7 .ph7-pc-nav li.open .nav-item {
+  color: #437931; }
+
+.public-head-7 .ph7-pc-nav li .nav-item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 1px;
+  background-color: #437931;
+  margin-right: 0;
+  -webkit-transtion: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.public-head-7.fixed .ph7-pc-nav li .nav-item::before {
+  background-color: #ff4754; }
+
+.public-head-7 .ph7-pc-nav li .nav-item:hover::before, .public-head-7 .ph7-pc-nav li.active .nav-item::before, .public-head-7 .ph7-pc-nav li.open .nav-item::before {
+  width: 15px;
+  margin-right: 10px; }
+
+.public-head-7 .ph7-pc-nav li .nav-item > span {
+  display: inline-block;
+  vertical-align: middle; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub {
+  display: none;
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  margin-left: -95px;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li {
+  float: none;
+  width: 190px;
+  background-color: #FFF;
+  border: solid 1px #e3e3e3;
+  border-top: none;
+  margin-left: 0; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li a {
+  display: block; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li a span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 14px;
+  color: #999999;
+  padding: 13px 23px;
+  background-image: url(../images/mdw1.png);
+  background-position: 200px center;
+  background-repeat: no-repeat;
+  -webkit-transtion: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li a:hover span {
+  color: #333333;
+  padding-left: 45px;
+  background-position: 170px center; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f2f2f2;
+  -webkit-transtion: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.public-head-7 .ph7-pc-nav li .nav-item-sub li a:hover::before {
+  width: 100%; }
+
+.public-head-7 .navbar-form, .public-head-7 .navbar-btn {
+  display: none; }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .public-head-7 .ph7-pc-nav li {
+    margin-left: 5px; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .public-head-7 .ph7-pc-nav {
+    display: none; }
+
+  .public-head-7 .hamburger {
+    display: block;
+    height: 47px; }
+
+  .public-head-7 .public-head-7-inner {
+    padding: 15px 0; } }
+@media screen and (max-width: 992px) {
+  .public-head-7 {
+    position: fixed;
+    background-color: #FFF; }
+
+  .public-head-7 .public-head-7-inner {
+    width: 100%;
+    padding: 12px; }
+
+  .public-head-7 .ph7-pc-nav {
+    display: none; }
+
+  .public-head-7 .ph7-logo {
+    height: 28px; }
+
+  .public-head-7 .ph7-logo a {
+    margin-top: -28px; }
+
+  .public-head-7.fixed .ph7-logo a {
+    margin-top: -28px; }
+
+  .public-head-7 .ph7-logo a img {
+    height: 28px; }
+
+  .public-head-7 .hamburger {
+    display: block;
+    height: 28px; }
+
+  .public-head-7 .hamburger-box {
+    width: 0.36rem;
+    vertical-align: middle; }
+
+  .public-head-7 .hamburger-inner, .public-head-7 .hamburger-inner:after, .public-head-7 .hamburger-inner:before {
+    width: 0.36rem; }
+
+  .public-head-7 .hamburger-inner:before {
+    top: 0.14rem; }
+
+  .public-head-7 .hamburger-inner:after {
+    top: -0.14rem; }
+
+  .public-head-7 .hamburger--collapse .hamburger-inner {
+    top: 0.26rem; }
+
+  .public-head-7 .public-head-7-inner-box {
+    position: relative;
+    z-index: 4;
+    height: 0.78rem;
+    border-bottom: solid 1px #494949; } }
+@media screen and (max-width: 992px) {
+  .public-head-7 {
+    height: 0.88rem; }
+
+  .public-head-7 .public-head-7-inner-box {
+    height: 0.88rem; }
+
+  .public-head-7 .public-head-7-inner {
+    padding: 0.2rem; }
+
+  .public-head-7 .ph7-logo {
+    max-width: none;
+    height: 0.48rem; }
+
+  .public-head-7 .ph7-logo a {
+    margin-top: -0.48rem; }
+
+  .public-head-7 .ph7-logo a img {
+    height: 0.48rem; }
+
+  .public-head-7 .hamburger {
+    height: 0.48rem; }
+
+  .hamburger-box {
+    position: static;
+    height: 0.48rem; }
+
+  .public-head-7 .hamburger--collapse .hamburger-inner {
+    top: 0.6rem; }
+
+  .public-head-7 .hamburger-inner:before {
+    top: -0.15rem; }
+
+  .public-head-7 .hamburger-inner:after {
+    top: -0.3rem; }
+
+  .banner2_all {
+    padding-top: 0.88rem; } }
+
+/*# sourceMappingURL=style.css.map */

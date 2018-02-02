@@ -1,0 +1,172 @@
+@import "config";
+
+@import "../../../lib/scss/config";
+
+.#{$public_wrap_div} .w1200{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.#{$public_wrap_div} .site-details-1 {
+    padding: 35px 0;
+}
+.#{$public_wrap_div} .site-details-1-tit {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+.#{$public_wrap_div} .site-details-1-info {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d6d6d6;
+}
+.#{$public_wrap_div} .site-details-1-info span {
+    padding-right: 60px;
+}
+.#{$public_wrap_div} .site-details-1-body {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 65px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.#{$public_wrap_div} .site-details-1-body img {
+    max-width: 100%;
+}
+.#{$public_wrap_div} .site-details-1-footer {
+    width: 100%;
+    float: none;
+}
+.#{$public_wrap_div} .site-details-1-footer li.sd1f-pagenav {
+    float: left;
+}
+.#{$public_wrap_div} .site-details-1-footer li.sd1f-pagenav a {
+    display: block;
+    color: #fb7600;
+    font-size: 14px;
+}
+.#{$public_wrap_div} .site-details-1-footer li.sd1f-share {
+    float: right;
+}
+.#{$public_wrap_div} .site-details-1-moreread {
+    margin-top: 45px;
+    border-top: 1px solid #d9d9d9;
+}
+.#{$public_wrap_div} .site-details-1-moreread .sd1m-tit {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    padding: 50px 0;
+}
+.#{$public_wrap_div} .sd1m-list{
+   max-width: 1200px;
+   margin: -20px auto 0;
+}
+.#{$public_wrap_div} .sd1m-list li {
+    float: left;
+    width: calc(100% - (20px * 3) / 4);
+    width: -webkit-calc((100% - (20px * 3)) / 4);
+    overflow: hidden;
+    margin-left: 20px;
+}
+.#{$public_wrap_div} .sd1m-list li:first-child {
+    margin-left: 0;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-thumb {
+    display: block;
+    width: 285px;
+    height: 165px;
+    overflow: hidden;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-thumb img {
+    width: 285px;
+    height: 165px;
+    -webkit-transtion: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-tit, .#{$public_wrap_div} .sd1m-list li .sd1ml-date, .#{$public_wrap_div} .sd1m-list li .sd1ml-info, .#{$public_wrap_div} .sd1m-list li .sd1ml-more {
+    display: block;
+    overflow: hidden;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-tit {
+    font-size: 16px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-date {
+    color: #666;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-info {
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    line-height: 26px;
+    height: 52px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.#{$public_wrap_div} .sd1m-list li .sd1ml-more {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #ca9237;
+}
+.#{$public_wrap_div} .sd1m-list li:hover .sd1ml-thumb img {
+    -webkit-transtion: scale(1.2);
+    transform: scale(1.2);
+}
+.#{$public_wrap_div} .sd1m-more {
+    font-size: 0px;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+.#{$public_wrap_div} .sd1m-more a:link {
+    display: inline-block;
+    color: #FFF;
+    font-size: 14px;
+    padding: 12px 50px;
+    border-radius: 4px;
+    background: #fb7600;
+}
+.#{$public_wrap_div} .sd1m-more a:hover {
+    background: #ff9334;
+}
+
+
+@media only screen and(min-width:751px) and (max-width:1360px){
+    .#{$public_wrap_div} .w1200{
+        padding: 28px 30px;
+    }
+    .#{$public_wrap_div} .sd1m-list{
+        padding: 0 30px;
+    }
+}
+
+
+@media only screen and(min-width:320px) and (max-width:750px){
+    .#{$public_wrap_div} .site-details-1-moreread{
+        display: none;
+    }
+    .#{$public_wrap_div} .w1200{
+        width: 93%;
+    }
+    .#{$public_wrap_div} .site-details-1-body{
+        padding: 0.4rem 0;
+        font-size: 0.32rem;
+        line-height: 30px;
+    }
+    .#{$public_wrap_div} .site-details-1-footer li.sd1f-share{
+        display: none;
+    }
+    .public_index_200 .site-details-1-tit{
+        font-size: 0.36rem;
+    }
+}

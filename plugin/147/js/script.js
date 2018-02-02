@@ -1,0 +1,19 @@
+	        $(".h-jshtd .cn_1_1").mouseenter(function(){
+		        $(this).find('.cn_nr_bg').stop(false,true).fadeIn(200);
+				$(this).find(".cn_line_h1").stop().animate({"width":"256px"},500);
+				$(this).find(".cn_line_h2").stop().animate({"width":"256px"},500);
+				$(this).find(".cn_line_s1").stop().animate({"height":"397px"},500);
+				$(this).find(".cn_line_s2").stop().animate({"height":"397px"},500);
+				$(this).find('.cn_nt').stop(false,true).fadeOut(200);
+				$(this).find('.cn_p1').stop(false,true).fadeIn(200);
+				$(this).find('.cn_p2').stop(false,true).fadeIn(200);
+			}).mouseleave(function(){
+				$(this).find('.cn_nr_bg').stop(false,true).fadeOut(200);
+				$(this).find(".cn_line_h1").stop().animate({"width":"0"},500);
+				$(this).find(".cn_line_h2").stop().animate({"width":"0"},500);
+				$(this).find(".cn_line_s1").stop().animate({"height":"0"},500);
+				$(this).find(".cn_line_s2").stop().animate({"height":"0"},500);
+				$(this).find('.cn_nt').stop(false,true).fadeIn(200);
+				$(this).find('.cn_p1').stop(false,true).fadeOut(200);
+				$(this).find('.cn_p2').stop(false,true).fadeOut(200);
+			});
